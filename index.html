@@ -242,17 +242,18 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-      max-width: 1280px;
+      max-width: 1180px;
     }
 
     .hero-title {
       margin: 0;
-      max-width: 1120px;
+      max-width: 1040px;
       font-family: var(--font-display);
       font-weight: 400;
-      font-size: clamp(4.4rem, 9vw, 9rem);
-      line-height: 0.95;
-      letter-spacing: -2.46px;
+      font-size: clamp(3.75rem, 7vw, 7.35rem);
+      line-height: 0.98;
+      letter-spacing: -0.042em;
+      text-wrap: balance;
       text-shadow: 0 8px 30px rgba(0, 0, 0, 0.18);
     }
 
@@ -324,20 +325,22 @@
     }
 
     .section-label {
-      font-size: 0.78rem;
-      letter-spacing: 0.18em;
+      font-size: 0.74rem;
+      letter-spacing: 0.22em;
       text-transform: uppercase;
       color: var(--muted-foreground);
-      margin-bottom: 18px;
+      margin-bottom: 20px;
     }
 
     .section-title {
-      margin: 0 0 28px;
+      margin: 0 0 30px;
+      max-width: 1120px;
       font-family: var(--font-display);
       font-weight: 400;
-      font-size: clamp(2.8rem, 5vw, 5rem);
-      line-height: 0.96;
-      letter-spacing: -0.04em;
+      font-size: clamp(2.35rem, 4vw, 4.15rem);
+      line-height: 1.02;
+      letter-spacing: -0.035em;
+      text-wrap: balance;
     }
 
     .summary {
@@ -802,8 +805,14 @@
       }
 
       .hero-title {
-        max-width: 92vw;
-        letter-spacing: -1.6px;
+        max-width: 88vw;
+        font-size: clamp(3.5rem, 9vw, 5.75rem);
+        letter-spacing: -0.038em;
+      }
+
+      .section-title {
+        max-width: 94%;
+        font-size: clamp(2.35rem, 6vw, 3.65rem);
       }
 
       .cards-2,
@@ -838,7 +847,15 @@
       }
 
       .hero-title {
-        font-size: clamp(3.5rem, 14vw, 5rem);
+        max-width: 94vw;
+        font-size: clamp(3rem, 12vw, 4.35rem);
+        line-height: 1;
+      }
+
+      .section-title {
+        max-width: 100%;
+        font-size: clamp(2.2rem, 10vw, 3rem);
+        line-height: 1.04;
       }
 
       .hero-subtext {
